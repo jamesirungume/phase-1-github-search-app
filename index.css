@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: blue;
 }
 
 #github-container {
@@ -10,4 +11,20 @@
 
 ul {
   list-style: none;
+}
+#user-list {
+  display:block;
+  margin-bottom: 100px;
+  background-color: black;
+  color: aliceblue;
+  font-size: xx-large;
+  font-style: italic;
+  counter-increment: item-counter;
+  padding: 100px;
+}
+#james {
+  background-color: blue;
+}
+#repos-list {
+  font-size: x-large;
 }
