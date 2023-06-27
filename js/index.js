@@ -49,6 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
     users.forEach(user => {
      const detail = document.createElement('li') 
     detail.textContent = user.login;
+    let img=document.createElement('img')  
+    img.src=user.avatar_url
+
+    let link=document.createElement('a')
+    link.href= user.html_url;
+    link.textContent = 'View Profile';
+    userlist.append(img);
+    userlist.append(link)     
     userlist.append(detail);
 })
     }
@@ -60,7 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
         repos.forEach(repo => {
           const lines = document.createElement('li');
           lines.textContent = repo.name;
+
+    
+
           repolist.append(lines);
-        });
+            });
       }
 });
